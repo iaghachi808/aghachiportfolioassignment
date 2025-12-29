@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog</title>
+
+  <!-- Bootstrap / Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Your site-wide styles (navbar, buttons, etc.) -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Page-specific styles for this Blog page -->
+  <link rel="stylesheet" href="css/blog.css" />
+</head>
+<body>
+
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 shadow p-4" style="background-color: rgba(255,255,255,0.95);">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h4 class="fw-bold m-0" id="contactModalLabel">Contact Me!</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <p class="text-muted">Get in touch with me to discuss bookings or further details of your event.</p>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Name*" required />
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email*" required />
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="3" placeholder="Message*" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark w-100 rounded-pill">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shrinkable-navbar">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="images/Logo.png" alt="Logo">
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Center links -->
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item">
+          <a class="nav-link"  href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="collection.html">Collection</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item ms-lg-3">
+          <a href="#" class="get-in-touch-btn" data-bs-toggle="modal" data-bs-target="#contactModal">
+            <span class="circle-icon">&rarr;</span>
+            Get in touch
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- HERO (black header) -->
+  <header class="blog-hero">
+    <div class="container">
+      <div class="text-center">
+        <span class="feature-pill">Featuring</span>
+        <h1 class="blog-title">Resources and insights</h1>
+        <p class="blog-sub">The latest industry news, interviews, technologies, and resources.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- POSTS GRID -->
+  <main class="posts-section">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="post-card">
+            <img class="post-thumb" src="Images/Image.png" alt="Growth Training" />
+            <div class="post-body">
+              <small class="post-kicker">Inspiration</small>
+              <h3 class="post-title">Growth Training</h3>
+              <div class="post-divider"></div>
+              <p class="post-excerpt">
+                How do you create compelling presentations that wow your colleagues and impress your managers?
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="post-card">
+            <img class="post-thumb" src="Images/Image (1).png" alt="Importance of Grit" />
+            <div class="post-body">
+              <small class="post-kicker">Grit</small>
+              <h3 class="post-title">Importance of Grit</h3>
+              <div class="post-divider"></div>
+              <p class="post-excerpt">
+                How do you create compelling presentations that wow your colleagues and impress your managers?
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="post-card">
+            <img class="post-thumb" src="Images/Image (2).png" alt="Power of Perseverance" />
+            <div class="post-body">
+              <small class="post-kicker">Perseverance</small>
+              <h3 class="post-title">Power of Perseverance</h3>
+              <div class="post-divider"></div>
+              <p class="post-excerpt">
+                How do you create compelling presentations that wow your colleagues and impress your managers?
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="post-card">
+            <img class="post-thumb" src="Images/Image (3).png" alt="Long Term Game" />
+            <div class="post-body">
+              <small class="post-kicker">Future</small>
+              <h3 class="post-title">Long Term Game</h3>
+              <div class="post-divider"></div>
+              <p class="post-excerpt">
+                How do you create compelling presentations that wow your colleagues and impress your managers?
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="post-card">
+            <img class="post-thumb" src="Images/Image (4).png" alt="Overcoming Self Doubt" />
+            <div class="post-body">
+              <small class="post-kicker">Self doubt</small>
+              <h3 class="post-title">Overcoming Self Doubt</h3>
+              <div class="post-divider"></div>
+              <p class="post-excerpt">
+                How do you create compelling presentations that wow your colleagues and impress your managers?
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="post-card">
+            <img class="post-thumb" src="Images/Image (5).png" alt="Developing Discipline" />
+            <div class="post-body">
+              <small class="post-kicker">Discipline</small>
+              <h3 class="post-title">Developing Discipline</h3>
+              <div class="post-divider"></div>
+              <p class="post-excerpt">
+                How do you create compelling presentations that wow your colleagues and impress your managers?
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Stay Connected -->
+  <section class="stay-connected bg-white py-5">
+    <div class="container">
+      <div class="row align-items-start">
+        <!-- Left -->
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h4 class="text-muted fw-semibold stay-subtitle mb-2">Stay Connected<sup>®</sup></h4>
+          <h1 class="fw-bold display-5 email-heading mb-3">Sambalogun@gmail.com</h1>
+          <p class="lead text-muted mb-4">
+            Explore my blog for tips on organizational growth, improving performance and driving positive change through team formulation.
+          </p>
+          <a href="#" class="btn btn-light shadow rounded-pill d-inline-flex align-items-center px-4 py-2" data-bs-toggle="modal" data-bs-target="#contactModal">
+            <span class="me-2 d-inline-flex justify-content-center align-items-center rounded-circle text-white bg-primary" style="width: 32px; height: 32px;">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+            Contact Now
+          </a>
+        </div>
+
+        <!-- Right Navigation Section -->
+        <div class="col-lg-6">
+          <ul class="list-unstyled nav-link-list">
+            <li class="d-flex justify-content-between align-items-center border-bottom py-3 text-muted">
+              <a href="index.html" class="text-muted text-decoration-none d-flex justify-content-between w-100">
+                <span>01/ Home</span> <i class="fas fa-arrow-right"></i>
+              </a>
+            </li>
+            <li class="d-flex justify-content-between align-items-center border-bottom py-3 text-muted">
+              <a href="about.html" class="text-muted text-decoration-none d-flex justify-content-between w-100">
+                <span>02/ About</span> <i class="fas fa-arrow-right"></i>
+              </a>
+            </li>
+            <li class="d-flex justify-content-between align-items-center border-bottom py-3 text-muted">
+              <a href="collection.html" class="text-muted text-decoration-none d-flex justify-content-between w-100">
+                <span>03/ Collection</span> <i class="fas fa-arrow-right"></i>
+              </a>
+            </li>
+            <li class="d-flex justify-content-between align-items-center border-bottom py-3 fw-bold text-dark">
+              <a href="blog.html" class="text-dark text-decoration-none d-flex justify-content-between w-100">
+                <span>04/ Blog</span> <i class="fas fa-arrow-right text-dark"></i>
+              </a>
+            </li>
+            <li class="d-flex justify-content-between align-items-center border-bottom py-3 text-muted" data-bs-toggle="modal" data-bs-target="#contactModal">
+              <a href="#" class="text-muted text-decoration-none d-flex justify-content-between w-100">
+                <span>05/ Contact</span> <i class="fas fa-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".shrinkable-navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("shrink");
+  } else {
+    navbar.classList.remove("shrink");
+  }
+});
+</script>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
